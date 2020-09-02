@@ -1,7 +1,7 @@
 Tip Calculator - Solution Code
 =================================
 
-Solution code for the Android Basics in Kotlin: Tipo Calculator ap.
+Solution code for the Android Basics in Kotlin: Tip Calculator app.
 
 
 Introduction
