@@ -7,11 +7,14 @@ assignees: ''
 
 ---
 
+**Codelab name**
+What is the title of the codelab?
+
 **Describe the problem**
 A clear and concise description of what the problem is.
 
-**In which step of the codelab can this issue be found?**
-Step number.
+**In which task and step of the codelab can this issue be found?**
+Task and step number.
 
 **Steps to reproduce?**
 What are the steps to reproduce the problem?
