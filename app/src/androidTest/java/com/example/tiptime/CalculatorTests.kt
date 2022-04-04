@@ -17,6 +17,7 @@ package com.example.tiptime
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
 import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.withId
@@ -37,7 +38,7 @@ class CalculatorTests {
     @Test
     fun calculate_20_percent_tip() {
         onView(withId(R.id.cost_of_service_edit_text))
-            .perform(typeText("50.00"))
+            .perform(typeText("50.00"), closeSoftKeyboard())
         onView(withId(R.id.calculate_button))
             .perform(click())
         onView(withId(R.id.tip_result))
@@ -48,7 +49,7 @@ class CalculatorTests {
     @Test
     fun calculate_18_percent_tip() {
         onView(withId(R.id.cost_of_service_edit_text))
-            .perform(typeText("50.00"))
+            .perform(typeText("50.00"), closeSoftKeyboard())
         onView(withId(R.id.option_eighteen_percent))
             .perform(click())
         onView(withId(R.id.calculate_button))
@@ -60,7 +61,7 @@ class CalculatorTests {
     @Test
     fun calculate_15_percent_tip_round_up() {
         onView(withId(R.id.cost_of_service_edit_text))
-            .perform(typeText("50.00"))
+            .perform(typeText("50.00"), closeSoftKeyboard())
         onView(withId(R.id.option_fifteen_percent))
             .perform(click())
         onView(withId(R.id.calculate_button))
@@ -72,7 +73,7 @@ class CalculatorTests {
     @Test
     fun calculate_15_percent_tip_no_rounding() {
         onView(withId(R.id.cost_of_service_edit_text))
-            .perform(typeText("50.00"))
+            .perform(typeText("50.00"), closeSoftKeyboard())
         onView(withId(R.id.option_fifteen_percent))
             .perform(click())
         onView(withId(R.id.round_up_switch))
