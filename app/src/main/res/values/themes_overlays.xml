@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Overlay" parent="ThemeOverlay.Material3.DynamicColors.Light">
+        <item name="colorPrimary">@color/overlay_light_primary</item>
+        <item name="colorOnPrimary">@color/overlay_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/overlay_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/overlay_light_onPrimaryContainer</item>
+    </style>
+</resources>
